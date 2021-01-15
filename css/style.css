@@ -1,0 +1,28 @@
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: url("../img/tersius-van-rhyn-vhnoRmcQ7eA-unsplash\ \(2\).jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: grid;
+    place-content: center;
+    height: 97vh;
+    width: 98vw;
+}
+
+.text-container {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+span {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
