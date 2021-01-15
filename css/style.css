@@ -10,8 +10,10 @@ body {
     color: #fff;
     display: grid;
     place-content: center;
-    height: 97vh;
-    width: 98vw;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
 }
 
 .text-container {
