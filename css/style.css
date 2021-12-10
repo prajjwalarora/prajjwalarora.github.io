@@ -1,30 +1,117 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
-
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    background: url("../img/tersius-van-rhyn-vhnoRmcQ7eA-unsplash\ \(2\).jpg") no-repeat;
-    background-size: cover;
-    color: #fff;
-    display: grid;
-    place-content: center;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+  font-family: "Ubuntu", sans-serif;
+  background: url("../img/background.png") no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
 
+.header {
+  width: 100vw;
+  position: fixed;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo-container {
+  width: 20%;
+}
+.header .logo-container img {
+  height: auto;
+  width: 8rem;
+}
+.header nav {
+  flex-basis: 40%;
+}
+.header nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 238, 0.7);
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.header nav ul li a.nav-link-active {
+  color: rgba(255, 255, 238, 1);
+}
+
+.nav-button {
+  border: 1px solid rgba(255, 255, 238, 1);
+  padding: 1.5rem 3rem;
+  color: rgba(255, 255, 238, 1) !important;
+  border-radius: 10rem;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+.main-container {
+  display: flex;
+  align-items: center;
 }
 
 .text-container {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    text-align: center;
+  margin-top: 12%;
 }
 
-span {
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-    -webkit-background-clip: text;
-    color: transparent;
+.heading h1 {
+  font-family: "Lobster", cursive;
+  font-size: 6rem;
+}
+.sub-heading {
+  margin-left: 5rem;
+  text-align: center;
+}
+.sub-heading h3 {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgba(255, 255, 238, 0.7);
+}
+
+.avatar-container .avatar {
+  height: auto;
+  width: 30rem;
+}
+
+@media screen and (max-width: 1370px) {
+  html {
+    font-size: 50%;
+  }
+  .header .container {
+    width: 90%;
+  }
 }
